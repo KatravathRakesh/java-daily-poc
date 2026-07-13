@@ -13,7 +13,7 @@ public class Insertion_Sort {
 				j = j-1;
 			}
 			
-			arr[j] = temp;
+			arr[j] = temp;   
 		}
 		System.out.println(Arrays.toString(arr));
 		
