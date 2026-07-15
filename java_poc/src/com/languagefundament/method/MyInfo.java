@@ -67,14 +67,9 @@ public class MyInfo {
 		displayPercentage(83);
 		displayFatherName("K Hemla Naik");
 		displayMotherName("K Javamma");
-		displayAddress("5-75, keshavapur Pedda thanda, Koilkonda(M), Mahabubnagar(Dist), Telangana(State), PINCode : 509371");
-		
+		displayAddress("5-75, keshavapur Pedda thanda, Koilkonda(M), Mahabubnagar(Dist), Telangana(State), PINCode : 509371");	
 	}
 	void main(String[] args) {
 		displayInfo();
-
 	}
-	
-	
-
 }
