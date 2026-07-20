@@ -7,36 +7,29 @@ public class RowWiseSum {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		int[][] arr= new int[3][3];
+		System.out.print("Enter the row size : ");
+		int row = s.nextInt();
+		System.out.print("Enter the col size : ");
+		int col = s.nextInt();
 		
-		arr[0][0] = 1;
-		arr[0][1] = 2;
-		arr[0][2] = 3;
+		int[][] arr =new int[row][col];
 		
-		arr[1][0] = 4;
-		arr[1][1] = 5;
-		arr[1][2] = 6;
-		
-		arr[2][0] = 7;
-		arr[2][1] = 8;
-		arr[2][2] = 9;
-		
-		int rowsum = 0;
-		for(int arr1[] : arr) {
-			for(int a : arr1) {
-				System.out.print(a+" ");
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<col;j++) {
+				arr[i][j] = s.nextInt();
 			}
 			System.out.println();
 		}
 		
-		for(int i=0;i<=arr.length-1;i++) {
-			for(int j=0;j<=arr.length-1;j++) {
-				rowsum += arr[i][j];
-				
+		
+		for(int i=0;i<row;i++) {
+			int sum = 0;
+			for(int j=0;j<col;j++) {
+				sum +=arr[i][j];
 			}
+			System.out.println("sum of each row "+(i+1)+" : "+sum);
 		}
 		
-		System.out.print("Sum of Each row : "+rowsum);
 	}
 
 }
