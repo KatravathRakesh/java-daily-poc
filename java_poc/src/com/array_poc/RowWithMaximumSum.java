@@ -2,7 +2,7 @@ package com.array_poc;
 
 import java.util.Scanner;
 
-//Find the row with the highest sum
+//Find the row with Maximum and Minimun the highest sum
 public class RowWithMaximumSum {
 
 	public static void main(String[] args) {
