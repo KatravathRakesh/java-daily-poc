@@ -6,6 +6,7 @@ public class Student {
 	private String name;
 	private long marks;
 	
+	
 	public String toString() {
 		return " Student Info : [ Student ID : "+id+", Student Name : "+name+
 				", Student Marks : "+marks+ " ] ";
