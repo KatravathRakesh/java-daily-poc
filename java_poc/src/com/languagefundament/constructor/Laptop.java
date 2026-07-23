@@ -14,6 +14,11 @@ public class Laptop {
 	}
 
 
+	public Laptop(int id, String companyName) {
+		this.id = id;
+		this.companyName = companyName;
+		
+	}
 	public Laptop(int id, String companyName, long price) {
 		this.id = id;
 		this.companyName = companyName;
@@ -31,7 +36,7 @@ public class Laptop {
 		Laptop l1 = new Laptop();
 		l1.show();
 		
-		Laptop l2 = new Laptop(102,"DELL",85000);
+		Laptop l2 = new Laptop(102,"DELL");
 		l2.show();
 		
 		Laptop l3 = new Laptop(1049,"Apple",185000);

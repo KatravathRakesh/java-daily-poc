@@ -40,6 +40,7 @@ public class CricketPlayer {
 		
 		CricketPlayer c1 = new CricketPlayer(name,match,runs);
 		c1.show();
+		
 
 		
 
