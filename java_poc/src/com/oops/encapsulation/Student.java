@@ -5,12 +5,20 @@ public class Student {
 	private int id;
 	private String name;
 	private long marks;
+	private String collegeName;
+	
+	//No arg Constructor
+	public Student() {
+		System.out.println("No - Argument Construction");
+	}
 	
 	
 	public String toString() {
 		return " Student Info : [ Student ID : "+id+", Student Name : "+name+
-				", Student Marks : "+marks+ " ] ";
+				", Student Marks : "+marks+ ", Student CollegeName : " +collegeName +" ] ";
 	}
+	
+	//Getter And Setter
 	public int getId() {
 		return id;
 	}
@@ -28,6 +36,13 @@ public class Student {
 	}
 	public void setMarks(long marks) {
 		this.marks = marks;
+	}
+	
+	public String getCollegeName() {
+		return collegeName;
+	}
+	public void setcollegeName(String collegeName) {
+		this.collegeName = collegeName;
 	}
 	
 }
