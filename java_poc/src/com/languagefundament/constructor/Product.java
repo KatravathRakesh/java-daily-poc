@@ -10,10 +10,10 @@ public class Product {
 		name = "Rakesh";
 	}
 	
-	Product(int i,String n){
+	Product(int id,String name){
 		System.out.println("Constructor with  Argument : ");
-		this.id = i;
-		this.name = n;
+		this.id = id;
+		this.name = name;
 	}
 
 	 void show() {

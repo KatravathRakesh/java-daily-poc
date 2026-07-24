@@ -42,6 +42,9 @@ public class Patient {
 			Patient p1 = new Patient(name,age,chargePerDay,daysAdmitted);
 			p1.show();
 			
+//			Patient p2 = new Patient(name,age,chargePerDay);
+//			p2.show();
+			
 			System.out.print("Do you want containu Yes/No : ");
 			ch = s.next();
 		}while(ch.equalsIgnoreCase("yes"));
