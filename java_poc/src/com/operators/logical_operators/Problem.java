@@ -41,6 +41,21 @@ public class Problem {
 		System.out.println("----------------------------------------------");
 		System.out.println(!true);// false
 		System.out.println(!false); //true
+		
+		System.out.println("----------------------------------------------");
+		System.out.println(true && true);//true
+		System.out.println(true && false);//false
+		System.out.println(false && true);//false  2nd postion dead code//true
+		System.out.println(false && false);//false  2nd postion dead code//true
+		
+		
+		int a =1;
+		int b = 2;
+		
+//		System.out.println(a++ > ++b && a++ < b--);//false
+		System.out.println(--a <++b || a++ < b--);//true
+		System.out.println(a);//2-->1-->0
+		System.out.println(b);//3-->2 -->3
 
 		
 		
