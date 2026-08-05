@@ -20,6 +20,7 @@ public class MultiplicationTableFor {
 		}else {
 			System.out.println("Multiple number is not a Even Number.");
 		}
+		s.close();
 
 	}
 

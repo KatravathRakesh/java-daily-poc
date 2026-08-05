@@ -13,7 +13,7 @@ public class ReverseCounting {
 		for(int i=n;i>=1;i--) {
 			System.out.print(i+" ");
 		}
-
+		s.close();
 	}
 
 }

@@ -172,6 +172,7 @@ public class HospitalBill {
 		
 		System.out.println("-------------------------------------");
 		System.out.println("Total Hospital Bill : "+totalfee);
+		s.close();
 
 	}
 
