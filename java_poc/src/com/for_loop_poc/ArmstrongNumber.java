@@ -1,7 +1,7 @@
 package com.for_loop_poc;
 
 import java.util.Scanner;
-//157 --> 1^3 + 5^3 + 3^3 ==> 157 = n
+//153 --> 1^3 + 5^3 + 3^3 ==> 153 = n
 public class ArmstrongNumber {
 	
 	static boolean isArmstrong(int n) {
