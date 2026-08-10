@@ -3,7 +3,7 @@ package com.array_practices_poc;
 public class LargestNameInArray {
 
 	public static void main(String[] args) {
-		String[] name = {"Rakesh", "Raju","MS.Dhoni","Yugandhar"};
+		String[] name = {"Rakesh", "Raju","MS.Dhoni","Yugandhar","Katravath Suresh"};
 		
 		String max = "";
 		
