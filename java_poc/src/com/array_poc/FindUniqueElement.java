@@ -1,9 +1,8 @@
 package com.array_poc;
 
+public class FindUniqueElement {
 
-public class FindDuplicateElement {
-
-	static void findDuplicateElement(int[] num) {
+	static void finduniqueElement(int[] num) {
 		
 		for(int i=0;i<num.length;i++) {
 			boolean flag = false;
@@ -18,21 +17,24 @@ public class FindDuplicateElement {
 				continue;
 			}
 			
-			for(int j=i+1;j<num.length;j++) {
+			for(int j= i+1;j<num.length;j++) {
 				if(num[j] == num[i]) {
-					
-					System.out.print(num[i]+" ");
+					flag = true;
 					break;
 				}
 			}
+			
+			if(!flag) {
+				System.out.print(num[i]+" ");
+			}
+			
+			
 		}
-
 	}
-
 	public static void main(String[] args) {
-		int[] num = { 10, 20, 10, 30, 10,30, 20 };
-
-		findDuplicateElement(num);
+		int[] num = {10,20,30,40,20,10,10};
+		
+		finduniqueElement(num);
 
 	}
 
