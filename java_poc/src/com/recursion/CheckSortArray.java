@@ -13,7 +13,7 @@ public class CheckSortArray {
 		return isArraySort(arr,i+1);
 	}
 	public static void main(String[] args) {
-		int[] arr = {1,5,3,4};
+		int[] arr = {1,2,3,4};
 		int i=0;
 		if(isArraySort(arr,i)) {
 			System.out.println("Given Array is  Sorted");
