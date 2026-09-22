@@ -1,9 +1,13 @@
 package com.exception;
 
-public class ATM {
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class UncheckedException {
 
 	public static void main(String[] args) {
 		System.out.println("main method Started");
+		Scanner s = new Scanner(System.in);
 		
 		try {
 			System.out.println(10/0);
@@ -43,9 +47,27 @@ public class ATM {
 		}
 		
 		
+		
+		
+		try {
+			System.out.print("Enter the Number : ");
+			int num = s.nextInt();
+			System.out.println(num);
+		}catch(InputMismatchException e4) {
+			System.out.println(e4.toString());
+		}
+		
+		try {
+			String name = null;
+			System.out.println(name.length());
+		}catch(NullPointerException e5) {
+			System.out.println(e5.toString());
+		}finally {
+			s.close();
+		}
 		System.out.println("main method ended");
 		
-		
+	
 		
 	}
 
