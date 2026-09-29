@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class FindLeaderElement {
 
 	static void findLeaderElement(int[] num) {
+//		TC : O(n^2)
 		System.out.println("Leader Element in Given Arrays : ");
 
 		for (int i = 0; i < num.length; i++) {
