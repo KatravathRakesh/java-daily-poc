@@ -7,26 +7,24 @@ public class ReverseEachWord {
 	public static String reverse(String str) {
 		StringBuilder sb = new StringBuilder("");
 
-		for (int i = 0; i < str.length(); i++) {
-			
-			char ch = str.charAt(i);
-			
-			if (ch == ' ') {
-				int len = i - 1;
-				for (int j = len; j >= 0; j--) {
-					sb.append(str.charAt(j));
-				}
-				sb.append(" ");
-			} else {
-				int len = i;
-				for (int j = str.length()-1; j >=len; j--) {
-					sb.append(str.charAt(j));
-				}
-				sb.append(" ");
-				break;
-			}
-			
-		}
+		 int start = 0;
+
+	        for (int i = 0; i <= str.length(); i++) {
+
+	            if (i == str.length() || str.charAt(i) == ' ') {
+
+	                for (int j = i - 1; j >= start; j--) {
+	                    sb.append(str.charAt(j));
+	                }
+
+	                if (i < str.length()) {
+	                    sb.append(" ");
+	                }
+
+	                start = i + 1;
+	            }
+	        }
+		
 
 		return sb.toString();
 
