@@ -1,4 +1,4 @@
-package collection;
+package com.collection;
 
 public class Bike {
 
