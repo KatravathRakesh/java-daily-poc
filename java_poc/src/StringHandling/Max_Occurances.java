@@ -27,6 +27,8 @@ public class Max_Occurances {
 		
 		System.out.println("Maximum count Occurances : "+max);
 		System.out.println("Maximum Number Of Character Occurances : "+ch);
+		
+		sc.close();
 
 	}
 
